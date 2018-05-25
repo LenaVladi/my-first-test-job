@@ -26,3 +26,10 @@ body {
   line-height: 21px;
   color: black;
 }
+
+@media (min-width: $tablet-size) {
+  body {
+    min-width: $tablet-size;
+    font-size: 1.2em;
+  }
+}

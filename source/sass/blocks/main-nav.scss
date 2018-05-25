@@ -97,6 +97,32 @@
   .main-nav {
     position: static;
     display: flex;
+    justify-content: space-between;
+    
+    &:last-child {
+      box-shadow: none;
+    }
+
+    &--second {
+      justify-content: space-between;
+    }
   }
 
+  .main-nav__link {
+    border-top: none;
+    font-size: 0.8em;
+    width: 20%;
+  }
+
+  .main-nav__link--active {
+    position: static;
+    width: 20%;
+    box-shadow: 0 6px 0 -3px $icon-color;
+  }
+}
+
+@media (min-width: $ipadPro-size) {
+  .main-nav__link {
+    font-size: 1em;
+  }
 }

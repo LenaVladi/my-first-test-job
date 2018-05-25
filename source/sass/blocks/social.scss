@@ -31,3 +31,9 @@
   display: block;
   margin: 0 10%;
 }
+
+@media (min-width: $tablet-size) {
+  .social {
+    width: 80%;
+  }
+}

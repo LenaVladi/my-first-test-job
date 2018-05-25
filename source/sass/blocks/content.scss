@@ -1,3 +1,21 @@
 .content {
   padding: 10% 0 0;
 }
+
+@media (min-width: $tablet-size) {
+  .content {
+    padding: 7% 0 0;
+  }
+}
+
+@media (min-width: $ipadPro-size) {
+  .content {
+    padding: 5% 0 0;
+  }
+}
+
+@media (min-width: $desktopFullHd-size) {
+  .content {
+    padding: 3% 0 0;
+  }
+}

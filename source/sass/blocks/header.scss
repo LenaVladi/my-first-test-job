@@ -29,12 +29,12 @@
   margin: 0;
   width: 60%;
   height: 45px;
-  line-height: 1.2em;
-  padding: 1% 0 0 18%;
+  line-height: 1em;
+  padding: 0 0 0 18%;
 }
 
 .header__logo-title {
-  font-size: 1.5em;
+  font-size: 1.2em;
   color: #8c5d33;
 }
 
@@ -104,28 +104,78 @@
 }
 
 @media (min-width: $tablet-size) {
+  .header__logo {
+    width: 30%;
+    height: 55px;
+    padding: 0 0 0 7%;
+  }
 
+  .header__logo-title {
+    font-size: 1.3em;
+  }
   
+  .header__logo-desc {
+    font-size: 0.6em;
+  }
+
+  .header__logo-pic {
+    width: 45px;
+    height: 45px;
+  }
+
+  .header__top {
+    padding: 10px 0;
+    height: 65px;
+  }
+  
+  .header__bottom {
+    height: 65px;
+  }
+
+  .header__contact {
+    position: relative;
+    min-width: 170px;
+  }
+
+  .header__contact-pic {
+    position: absolute;
+    left: 0;
+    top: 15px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .header__btn--lang, .header__search {
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+    color: #ffffff;
+    border: none;
+    background-color: $icon-color;
+    box-shadow: 0 0 20px 0 rgba(51, 51, 51, 0.5);
+    z-index: 1;
+  }
+
   .header__search input {
-    height: 42px;
+    height: 55px;
     width: 0;
-    padding: 0 42px 0 15px;
+    padding: 0 55px 0 15px;
     border: none;
     border-bottom: 2px solid transparent;
-    outline: none;
     background: transparent;
     transition: .4s cubic-bezier(0, 0.8, 0, 1);
     position: absolute;
-    color: #ffffff;
     top: 0;
     right: 0;
     z-index: 2;
   
     &:focus {
-      width: 80%;
+      width: 300px;
+      right: 57px;
       background-color: #ffffff;
-      z-index: 1;
-      border-bottom: 2px solid #F9F0DA;
+      color: #000000;
+      z-index: 3;
+      border-bottom: 2px solid #333333;
     }
   }
   
@@ -140,7 +190,10 @@
     right: 0;
     cursor: pointer;
   }
-
-  
 }
 
+@media (min-width: $ipadPro-size) {
+  .header__contact {
+    min-width: 190px;
+  }
+}

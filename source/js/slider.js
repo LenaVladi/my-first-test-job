@@ -25,3 +25,29 @@ $('.slider__list li').draggable({
   revert:true
 });
 
+$(document).ready(function() {
+  
+  $('.preview__list li:last-child').prependTo('.preview__list');
+  var step = $('.preview__list li').outerWidth()
+  $('.preview__next').click(function() {
+    $('.preview__list').animate({
+      'left': -step
+    }, 'slow', function() {
+       $('.preview__list li:first-child').appendTo('.preview__list');
+       $('.preview__list').css('left',0);
+    });
+  });
+  
+   $('.preview__prev').click(function() {
+    $('.preview__list').animate({
+      'left': step
+    }, 'slow', function() {
+       $('.preview__list li:last-child').prependTo('.preview__list');
+       $('.preview__list').css('left',0);
+    });
+  });
+});
+
+$('.slider__list li').draggable({
+  revert:true
+});

@@ -32,14 +32,13 @@
 }
 
 .slider__viewport {
-  width: 90%;
-  position: absolute;
-  overflow: hidden;
-  text-align: center;
+  position: relative;
 }
 
 .slider__nav {
-  position: relative;
+  position: absolute;
+  width: 100%;
+  top: 0;
 }
 
 .slider__prev, .slider__next {
@@ -55,13 +54,13 @@
 .slider__prev {
   top: 50%;
   left: 0;
-  background-color: rgba($color: #000000, $alpha: 0.7);
+  background-color: rgba($color: #000000, $alpha: 0.8);
 }
 
 .slider__next {
   top: 50%;
   right: 0;
-  background-color: rgba($color: #000000, $alpha: 0.7);
+  background-color: rgba($color: #000000, $alpha: 0.8);
 }
 
 .slider__prev-pic, .slider__next-pic {
@@ -81,22 +80,39 @@
 } 
 
 .slider__list {
+  background-color: rgba($color: #000000, $alpha: 0.8);
   margin: 0;
   padding: 0;
   position: relative;
-  width: 90%;
+  width: 100%;
   height: 70px;
-  transition: 1s;
-  transition-timing-function: cubic-bezier(0.67,0.01,0.23,1);
+  overflow: hidden;
+  text-align: center;
 }
 
 .slider__item {
-  display: inline;
+  display: block;
+  float: left;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+}
+
+.slider__item img {
+  display: inline-block;
+  vertical-align: middle;
+  width: auto;
+  height: 100%;
 }
 
 @media (min-width: $iphone8-size) {
   .slider__main-photo {
     height: 200px;
+  }
+
+  .slider__item {
+    width: 100px;
+    height: 70px;
   }
 }
 
@@ -105,4 +121,11 @@
     height: 220px;
   }
 
+  .slider__list {
+    height: 100px;
+  }
+  .slider__item {
+    width: 100px;
+    height: 100px;
+  }
 }

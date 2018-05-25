@@ -237,8 +237,8 @@
               </div>
             </a>
             <a class="preview__item">
-                <div class="priview__bg"></div>
-              <div class="priview__desc">
+                <div class="preview__bg"></div>
+              <div class="preview__desc">
                 <time>22 мфрта 2018</time>
                 <p>"Сильные, добрые, смелые, ловкие, умелые – это все про британцев, одну из самых популярных пород в мире."</p>
               </div>
@@ -265,7 +265,7 @@
   </main>
   <footer class="footer">
     <div class="center-wrap">
-      <section class="logo">
+      <section class="footer__logo">
         <a class="header__logo" href="#">
           <i class="header__logo-wrap">
             <svg class="header__logo-pic" width="22px" height="22px">
@@ -277,19 +277,33 @@
         </a>
         <p>2018-2017 OOO "City cats"</p>
       </section>
-      <section class="footer__nav">
-        <ul class="footer__list list-style-none">
-          <li class="footer__item"><a href="" class="footer__link">Фонд помощи</a></li>
-          <li class="footer__item"><a href="" class="footer__link">Прайс-лист</a></li> 
-          <li class="footer__item"><a href="" class="footer__link">Вакансии</a></li>  
-          <li class="footer__item"><a href="" class="footer__link">Тендеры</a></li>  
-          <li class="footer__item"><a href="" class="footer__link">Контакты</a></li>  
-          <li class="footer__item"><a href="" class="footer__link">Горячая линия по самым разнообразным вопросам</a></li>  
-          <li class="footer__item"><button href="" class="footer__link" type="submit">Обратная связь</button></li>   
-        </ul>
-      </section>
+      <ul class="footer__list list-style-none">
+        <li class="footer__item"><a href="" class="footer__link">Фонд помощи</a></li>
+        <li class="footer__item"><a href="" class="footer__link">Прайс-лист</a></li> 
+        <li class="footer__item"><a href="" class="footer__link">Вакансии</a></li>  
+        <li class="footer__item"><a href="" class="footer__link">Тендеры</a></li>  
+        <li class="footer__item"><a href="" class="footer__link">Контакты</a></li>  
+        <li class="footer__item"><a href="" class="footer__link">Горячая линия по самым разнообразным вопросам</a></li>  
+        <li class="footer__item"><button href="" class="footer__link footer__btn" type="submit">
+          Обратная связь
+          <svg class="footer__btn-pic" width="15px" height="15px">
+            <use xlink:href="#icon-mail"></use>
+          </svg>
+        </button></li>   
+      </ul>
     </div> 
   </footer>
+  <section class="modal modal--close">
+    <form action="post">
+      <label for="theme" class="modal__label">Тема вопроса:</label>
+        <input class="modal__theme" type="text" id="theme" placeholder="Введите тему вопроса">
+      <label for="" class="modal__label">Описание: </label>
+        <textarea class="modal__text" name="" id="" cols="20" rows="7"></textarea>
+    </form>
+    <button class="modal__btn" type="submit">Отправить</button>
+  </section>
+  <div class="overlay"></div>
 <script src="js/slider.js"></script>
+<script src="js/popup.js"></script>
 </body>
 </html>

@@ -148,3 +148,23 @@
     height: 100px;
   }
 }
+
+@media (min-width: 1200px) {
+  .slider {
+    height: 630px;
+  }
+
+  .slider__main-photo {
+    height: 500px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .slider {
+    height: 750px;
+  }
+
+  .slider__main-photo {
+    height: 600px;
+  }
+}

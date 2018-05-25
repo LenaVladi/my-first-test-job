@@ -1,0 +1,16 @@
+.center-wrap {
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media (min-width: $ipadPro-size) {
+  .center-wrap {
+    width: 70%;
+  }
+}
+
+@media (min-width: $desktopFullHd-size) {
+  .center-wrap {
+    width: 60%;
+  }
+}

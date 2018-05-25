@@ -1,0 +1,128 @@
+.main-nav {
+  width: 100%;
+  position: absolute;
+  top: 55px;
+  left: 0;
+  display: none;
+
+  &--second {
+    top: 110px;
+  }
+
+  &:last-child {
+    box-shadow: 0 10px 20px 0 rgba(51, 51, 51, 0.5);
+  }
+}
+
+.main-nav__link {
+  display: block;
+  background-color: #ffffff;
+  color: #000000;
+  height: 55px;
+  line-height: 35px;
+  padding: 10px;
+  text-align: center;
+  border-top: 1px solid rgba($color: #333333, $alpha: 0.1);
+  width: 100%;
+}
+
+.main-nav__link--active {
+  position: absolute;
+  display: block;
+  border: none;
+  width: 50%;
+  left: 25%;
+  box-shadow: none;
+  top: -55px;
+}
+
+.main-nav__trigger, .main-nav__down {
+  display: block;
+}
+
+.main-nav__trigger {
+  height: 35px;
+  width: 35px;
+  background-image: url(../img/icon-burger.svg);
+  background-size: contain;
+}
+
+.main-nav__trigger-checkbox { 
+  display: none;
+
+  &:checked {
+
+    + .main-nav__trigger {
+      background-image: url(../img/icon-close.svg);
+    }
+
+    ~ .main-nav {
+      display: block;
+    }
+  }
+}
+
+.header__bottom .main-nav__link {
+  background-color: $second-color;
+}
+
+.main-nav__down {
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+  background-image: url(../img/icon-down.svg);
+  background-size: contain;
+}
+
+.main-nav__down-checkbox {
+  display: none;
+
+  &:checked {
+
+    + .main-nav__down {
+      background-image: url(../img/icon-up.svg);
+    }
+
+    ~ .main-nav {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: $tablet-size) {
+  .main-nav__trigger, .main-nav__down {
+    display: none;
+  }
+
+  .main-nav {
+    position: static;
+    display: flex;
+    justify-content: space-between;
+    
+    &:last-child {
+      box-shadow: none;
+    }
+
+    &--second {
+      justify-content: space-between;
+    }
+  }
+
+  .main-nav__link {
+    border-top: none;
+    font-size: 0.8em;
+    width: 20%;
+  }
+
+  .main-nav__link--active {
+    position: static;
+    width: 20%;
+    box-shadow: 0 6px 0 -3px $icon-color;
+  }
+}
+
+@media (min-width: $ipadPro-size) {
+  .main-nav__link {
+    font-size: 1em;
+  }
+}

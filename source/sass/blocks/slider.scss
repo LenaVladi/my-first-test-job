@@ -106,6 +106,10 @@
 }
 
 @media (min-width: $iphone8-size) {
+  .slider {
+    height: 300px;
+  }
+
   .slider__main-photo {
     height: 200px;
   }
@@ -117,14 +121,29 @@
 }
 
 @media (min-width: $tablet-size) {
+  .slider {
+    height: 530px;
+  }
+
   .slider__main-photo {
-    height: 220px;
+    height: 400px;
+  }
+
+  .slider__description {
+    padding: 2% 5%;
+    font-size: 1em;
+    height: 50px;
   }
 
   .slider__list {
     height: 100px;
   }
   .slider__item {
+    width: 100px;
+    height: 100px;
+  }
+
+  .slider__prev, .slider__next {
     width: 100px;
     height: 100px;
   }

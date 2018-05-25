@@ -15,4 +15,23 @@
 
 .news__video-yb {
   width: 100%;
+  height: 200px;
+}
+
+@media (min-width: $tablet-size) {
+  .news__video {
+   text-align: center;
+  }
+
+  .news__video-yb {
+    width: 80%;
+    height: 300px;
+  }
+}
+
+@media (min-width: $desktopFullHd-size) {
+  .news__video-yb {
+    width: 80%;
+    height: 400px;
+  }
 }

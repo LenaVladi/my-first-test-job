@@ -6,5 +6,9 @@
 
 
 @media (min-width: $tablet-size) {
-  flex-direction: row;
+  .share-news {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 }

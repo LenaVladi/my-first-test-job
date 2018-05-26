@@ -9,11 +9,17 @@
 
 .tabs__link {
   color: $icon-color;
-  font-size: 0.6em;
+  font-size: 0.7em;
 }
 
 .tabs__item-pic {
   fill: $icon-color;
   width: 10px;
   height: 10px;
+}
+
+@media (min-width: $tablet-size) {
+  .tabs__link {
+    font-size: 1em;
+  }
 }

@@ -5,7 +5,7 @@
 
 .footer p {
   font-size: 0.7em;
-  margin: 0 0 40px;
+  margin: 0;
 }
 
 .footer {
@@ -13,14 +13,9 @@
   padding: 5%;
 }
 
-.footer .header__logo {
+.footer__logo {
   margin: 0 auto;
-  padding: 2% 0 0 16%;
-}
-
-.footer .header__logo-pic {
-  padding: 1% 0 0 18%;
-  fill: #ffffff;
+  padding: 5% 0;
 }
 
 .footer__list {
@@ -28,13 +23,13 @@
 }
 
 .footer__item {
-  margin: 0 0 10px;
+  margin: 0 0 5%;
 }
 
 .footer__link {
   display: block;
   width: 100%;
-  height: 40px;
+  min-height: 40px;
   padding: 2% 10%;
 
   &:hover {
@@ -63,14 +58,8 @@
     justify-content: space-between;
   }
 
-  .footer__logo {
-    padding: 5% 0;
-  }
-
-  .footer .header__logo {
+  .footer__logo-link {
     width: 170px;
-    height: 50px;
-    padding: 6% 0 0 16%;
   }
 
   .footer__list {
@@ -86,7 +75,7 @@
   .footer__item {
     margin: 0 0 10px;
   }
-  
+
   .footer__link {
     display: block;
     width: 200px;

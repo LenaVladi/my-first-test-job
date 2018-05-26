@@ -24,35 +24,12 @@
 
 .header__logo {
   position: relative;
-  display: flex;
-  flex-direction: column;
   margin: 0;
-  width: 60%;
-  height: 45px;
-  line-height: 1em;
-  padding: 0 0 0 18%;
+  padding: 0;
 }
 
-.header__logo-title {
-  font-size: 1.2em;
-  color: #8c5d33;
-}
-
-.header__logo-desc {
-  font-size: 0.7em;
-  color: black;
-}
-
-.header__logo-wrap {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.header__logo-pic {
-  width: 35px;
-  height: 35px;
-  fill: $icon-color;
+.header__logo img {
+  width: 140px;
 }
 
 .header__btn--lang, .header__search {
@@ -95,7 +72,7 @@
   cursor: pointer;
   z-index: 1;
 }
-  
+
 .header__search-pic {
   position: absolute;
   top: 15px;
@@ -104,30 +81,15 @@
 }
 
 @media (min-width: $tablet-size) {
-  .header__logo {
-    width: 30%;
-    height: 55px;
-    padding: 0 0 0 7%;
-  }
-
-  .header__logo-title {
-    font-size: 1.3em;
-  }
-  
-  .header__logo-desc {
-    font-size: 0.6em;
-  }
-
-  .header__logo-pic {
-    width: 45px;
-    height: 45px;
+  .header__logo img {
+    width: 200px;
   }
 
   .header__top {
     padding: 10px 0;
     height: 65px;
   }
-  
+
   .header__bottom {
     height: 65px;
   }
@@ -168,7 +130,7 @@
     top: 0;
     right: 0;
     z-index: 2;
-  
+
     &:focus {
       width: 300px;
       right: 57px;
@@ -178,7 +140,7 @@
       border-bottom: 2px solid #333333;
     }
   }
-  
+
   .header__search button {
     background: transparent;
     font-size: 0;

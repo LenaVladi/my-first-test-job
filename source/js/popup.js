@@ -6,14 +6,14 @@ $(document).ready(function() {
 		 	function() { 
         $('.modal') 
           .removeClass('modal--close')
-					.animate( {opacity: 1, top: '25%'}, 200);
+					.animate(200);
 		});
 	});
 
 	// закрытие модального окна
 	$('.modal__btn, .overlay').click( function() {
 		$('.modal')
-			.animate( {opacity: 0, top: '45%'}, 200, 
+			.animate(200, 
 				function() { 
 					$('.modal').addClass('modal--close')
 					$('.overlay').fadeOut(400); 

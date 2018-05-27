@@ -111,8 +111,8 @@ gulp.task("default", function () {
 
 gulp.task("compress", function(cb) {
   pump([ gulp.src("source/js/*.js"), uglify()], cb)
-  // .pipe(rename(function(path) {
-  // path.basename += ".min"
-  // }))
+  .pipe(rename(function(path) {
+  path.basename += ".min"
+  }))
   .pipe(gulp.dest("build/js"));
 });

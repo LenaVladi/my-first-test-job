@@ -40,7 +40,7 @@
     "build": "gulp style",
     "sprite": "gulp sprite",
     "start": "gulp serve",
-    "deploy": "gulp build && gh-pages - d build"
+    "deploy": "gulp build && gh-pages -d build"
   },
   "browserslist": [
     "last 2 versions",

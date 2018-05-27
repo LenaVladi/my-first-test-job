@@ -20,6 +20,10 @@
   height: 200px;
 }
 
+.news__img-wrap img {
+  width: 100%;
+}
+
 @media (min-width: $tablet-size) {
   .news__video {
    text-align: center;

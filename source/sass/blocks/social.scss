@@ -5,12 +5,13 @@
 }
 
 .social__item {
+  min-width: 40px;
   height: 33px;
   border: 2px solid $icon-color;
   display: flex;
   align-items: center;
   margin: 0 2%;
-  padding: 2% 3%;
+  padding: 2% 2% 1%;
   font-size: 0.8em;
 }
 

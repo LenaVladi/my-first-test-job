@@ -8,7 +8,7 @@
   },
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
-    "ajv": "^6.5.0",
+    "ajv": "^6.12.3",
     "autoprefixer": "8.3.x",
     "browser-sync": "2.23.x",
     "del": "3.0.0",

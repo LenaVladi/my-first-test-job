@@ -9,7 +9,7 @@
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "ajv": "^6.5.0",
-    "autoprefixer": "8.3.x",
+    "autoprefixer": "10.4.x",
     "browser-sync": "2.23.x",
     "del": "3.0.0",
     "gulp": "3.9.x",
@@ -17,7 +17,7 @@
     "gulp-htmlmin": "^4.0.0",
     "gulp-imagemin": "^4.1.0",
     "gulp-plumber": "1.2.x",
-    "gulp-postcss": "7.0.x",
+    "gulp-postcss": "9.0.x",
     "gulp-posthtml": "^3.0.4",
     "gulp-rename": "^1.2.2",
     "gulp-webp": "^3.0.0",
@@ -28,7 +28,7 @@
     "posthtml-include": "^1.1.0",
     "pump": "^3.0.0",
     "run-sequence": "^2.2.1",
-    "stylelint": "9.2.x",
+    "stylelint": "9.10.x",
     "stylelint-config-htmlacademy": "0.1.x",
     "v-bar": "^3.0.0",
     "gh-pages": "^1.1.0"
